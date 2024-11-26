@@ -13,7 +13,7 @@ class TblCustomer extends Migration
      */
     public function up()
     {
-        Schema::create('customers', function (Blueprint $table) {
+        Schema::create('tbl_customers', function (Blueprint $table) {
             $table->Increments('customer_id');
             $table->string('customer_name');
             $table->string('customer_email');
@@ -30,6 +30,6 @@ class TblCustomer extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customers');
+        Schema::dropIfExists('tbl_customers');
     }
 }
